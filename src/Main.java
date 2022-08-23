@@ -1,5 +1,19 @@
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+        Scanner inp = new Scanner(System.in);
+        System.out.print("Eleman sayisi gir : ");
+        int a = inp.nextInt();
+        int fib = 0, top=1, n=1;
+        
+        for (int i=1; i<=a; i++){
+
+            top=fib;
+            fib+=n;
+
+            System.out.print(fib+" ");
+            n=top;
+
+        }
     }
 }
